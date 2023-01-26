@@ -1,0 +1,178 @@
+/* common settings */
+body {
+    padding-top: 90px;
+    font-size: 21px;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+p {
+    font-size: 21px;
+    margin: 20px auto;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+::placeholder {
+    color: inherit;
+}
+
+/* general classes */
+.grey {
+    color: #333;
+}
+.lightblue {
+    color: #2c3e50;
+}
+.green {
+    color: #1abc9c;
+}
+.bckgr-white {
+    background: #fff;
+}
+.bckgr-green {
+    color: #fff;
+    background: #1abc9c;
+}
+.bckgr-lightblue {
+    color: #ffffff;
+    background: #3a546d;
+}
+.bckgr-darkblue {
+    color: #fff;
+    background: #2c3e50;
+}
+.bold {
+    font-weight: bold !important;
+}
+.my-btn {
+    color: #fff;
+    background: #1abc9c;
+    font-size: inherit;
+    border: 1px solid;
+}
+.my-btn:hover {
+    color: #2c3e50;
+}
+.nopadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.m-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.p-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.p-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.m-top-30 {
+    margin-top: 30px;
+}
+
+/* star + borders */
+i.fa.fa-star {
+    font-size: 35px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+div[class*="star-icon"]::before,
+div[class*="star-icon"]::after {
+    content: "";
+    display: inline-block;
+    width: 13%;
+    height: 4px;
+    margin: 0 10px;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+.star-icon-white::before,
+.star-icon-white::after {
+    background: #fff;
+}
+.star-icon-lightblue::before,
+.star-icon-lightblue::after {
+    background: #2c3e50;
+}
+
+/* header */
+.my-navbar {
+    height: 90px;
+    border: none;
+}
+a.navbar-brand,
+.navbar .navbar-brand h4,
+.navbar-nav > li > a {
+    color: #fff !important;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+.navbar a:hover,
+a.navbar-brand h4:hover {
+    color: #1abc9c !important;
+}
+.navbar-nav > li > a {
+    font-size: 16px;
+}
+.navbar-nav > li,
+.navbar .navbar-brand h4 {
+    margin: 0 15px;
+}
+.navbar-toggle {
+    height: 38px;
+    margin-top: 25px;
+}
+.my-jumbotron img {
+    max-width: 250px;
+}
+
+/* main */
+main div[class*="col-"]>img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* footer */
+.socials a i.fa {
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.socials a {
+    margin: 8px 4px;
+}
+footer span {
+    font-size: 0.7em;
+}
+footer a.green:hover {
+    color: #1abc9c;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+/* media query md */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 48px;
+    }
+    h4 {
+        font-size: 25px;
+    }
+}
